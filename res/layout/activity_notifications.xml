@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Notifications">
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/backarrow"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/notificationtext"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/backbutton"
+        android:layout_alignTop="@+id/backbutton"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Notifications"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@id/notificationtext"
+        android:layout_toRightOf="@id/notificationtext"
+        android:src="@drawable/notifications"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/clearalltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear All"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:paddingRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/notificationtext"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:id="@+id/notificationlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clearalltext"
+        android:background="@drawable/rounded"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/noti2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/closebutton" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/noti2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your favorites list is expanding. Impressive"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:paddingRight="15dp"
+            android:padding="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkblue"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="25dp" />
+
+        <ImageView
+            android:id="@+id/homeicon"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:src="@drawable/home"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/FAB"
+            />
+
+        <ImageView
+            android:id="@+id/searchicon"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/homeicon"
+            android:src="@drawable/search"
+            android:layout_alignTop="@+id/FAB"/>
+
+        <ImageView
+            android:id="@+id/FAB"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/add"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ImageView
+            android:id="@+id/chaticon"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="35dp"
+            android:layout_toLeftOf="@+id/profileicon"
+            android:src="@drawable/chat"
+            android:layout_alignTop="@+id/FAB"/>
+
+        <ImageView
+            android:id="@+id/profileicon"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:src="@drawable/profile"
+            android:layout_alignTop="@+id/FAB"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

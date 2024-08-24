@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".PostInfo">
+
+    
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/backbtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Info"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/backbutton"
+        android:layout_alignBottom="@id/backbutton"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/likesview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backbutton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/likestext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Likes"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+       <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/likesRecyclerView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/likestext">
+
+       </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/likesview"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/commentstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentRecyclerView"
+            android:layout_below="@+id/commentstext"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

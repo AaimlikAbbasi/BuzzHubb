@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/likesview"
+    android:background="#00FFFFFF"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@color/darkblue"
+        android:id="@+id/pf1"/>
+    <TextView
+        android:id="@+id/likername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/pf1"
+        android:layout_marginBottom="15dp"
+        android:layout_alignBottom="@+id/pf1"
+
+
+        />
+</RelativeLayout>

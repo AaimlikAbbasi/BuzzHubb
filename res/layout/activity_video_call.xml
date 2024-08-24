@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+
+    tools:context=".VideoCall">
+    <FrameLayout
+        android:id="@+id/remote_video_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="740dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="50:08"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/bottombuttons2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkblue"/>
+
+
+    <View
+        android:id="@+id/greybar"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_alignTop="@id/bottombuttons2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#9e9f9f"
+        />
+
+    <ImageView
+        android:id="@+id/endbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/endcall"
+        android:layout_below="@id/greybar"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/greybar"
+        android:id="@+id/micmutebutton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/micmute"
+        android:layout_marginRight="40dp"
+        />
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/greybar"
+        android:id="@+id/speaker"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/volume"
+        android:layout_marginLeft="40dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/local_video_view_container"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/bottombuttons2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#D9D9D9"
+        android:backgroundTint="#D9D9D9" />
+
+</RelativeLayout>

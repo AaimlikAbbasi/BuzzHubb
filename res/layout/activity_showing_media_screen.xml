@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowingMediaScreen"
+    android:background="@color/black"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/upperborder"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/darkishblue">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/backbtn"
+        android:id="@+id/backbtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+    </ImageView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/darkblue"
+            android:id="@+id/pf1"
+            android:layout_below="@id/backbtn"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posters username"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/pf1"
+            android:layout_marginBottom="15dp"
+            android:layout_alignBottom="@+id/pf1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+
+        >
+        <ImageView
+            android:layout_below="@+id/upperborder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mediashowimage"
+            tools:ignore="NotSibling" />
+    <ImageView
+        android:layout_margin="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/redheart"
+        android:id="@+id/likebtn"/>
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/comment"
+            android:id="@+id/commentbtn"
+            android:layout_below="@+id/likebtn"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/share"
+            android:id="@+id/sharebtn"
+            android:layout_below="@+id/commentbtn"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caption"
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"/>
+
+
+</RelativeLayout>

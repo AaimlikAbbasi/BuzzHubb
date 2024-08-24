@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".SearchScreen">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/backbtn"
+        android:id="@+id/backbtn"
+        />
+    <RelativeLayout
+        android:id="@+id/searchbarlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/backbtn"
+        android:layout_alignTop="@+id/backbtn"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:background="@drawable/darkblueroundedrectangle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="3dp"
+            android:id="@+id/searchbar"
+            />
+        <ImageView
+            android:id="@+id/searchbuttonss"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/searchicon"
+            android:layout_alignParentRight="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchbarlayout"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/searchbarlayout"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/darkblue"
+            android:id="@+id/pf1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/pf1"
+            android:layout_marginBottom="15dp"
+            android:layout_alignBottom="@+id/pf1"
+
+
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_below="@+id/pf1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/darkblue"
+            android:layout_marginTop="10dp"
+            android:id="@+id/pf2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/pf2"
+            android:layout_alignBottom="@+id/pf2"
+            android:layout_marginBottom="15dp"
+
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/darkblue"
+            android:id="@+id/pf3"
+            android:layout_below="@+id/pf2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/pf3"
+            android:layout_marginBottom="15dp"
+            android:layout_alignBottom="@+id/pf3"
+
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
